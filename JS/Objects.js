@@ -12,3 +12,4 @@ const person = {
     }
 }
 person.greeting()
+console.log(person.name)
