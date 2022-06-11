@@ -2,11 +2,17 @@
 //     document.write('hello '+name)
 //     document.write('<br/>')
 // }
-
 // greet('Anu')
-// greet('Monika')
-const calculate = (value) =>{
+
+// function calculate(value){
+//        return value*2
+// }
+
+//function expression
+const width =function calculate(value){
        return value*2
 }
-const width = calculate(100)
-console.log(width)
+// console.log([width])
+console.log([width(2)])
+
+
