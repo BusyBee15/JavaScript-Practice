@@ -9,6 +9,8 @@ function calculateTotal(arr){
     for(let i=0; i<arr.length; i++){
         total =  total + arr[i];
     }
+    if(total > 100)console.log(`Whoa!, You're spending way too much`);
+    else console.log(`You're good, total is less than 100`)
     return total;
 }
 
