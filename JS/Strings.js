@@ -15,8 +15,15 @@ console.log(text.slice(0))
 
 
 // Templaate literals
+const name = 'anu'
+const age = 21
+const sentence = "Hey it's " + name + ' and she is ' + age + 'years old'
 
+console.log(sentence)
 
+const value = `Hey it's ${name} and she is ${age} years old`
+console.log(value)
 
+console.log(`${2+2}`)
 
 
