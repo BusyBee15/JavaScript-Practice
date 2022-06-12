@@ -14,3 +14,11 @@ function calculateTotal(arr){
 
 console.log(calculateTotal(gas))
 console.log(calculateTotal(food))
+
+// I just want to use one console log, but i need all the totals
+// solution : set up the object
+//this is so cool
+console.log({
+    gas:calculateTotal(gas),
+    food:calculateTotal(food)
+})
