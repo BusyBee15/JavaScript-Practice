@@ -8,7 +8,7 @@ const people = [
     {name:'susy', age:31, position:'the boss', id:4},
 
 ]
-/*
+
 function showPerson(person){
     //recall, we can access items of the array here, since this will be passed as a callback
     console.log(person.position.toUpperCase())
@@ -20,28 +20,28 @@ people.forEach(function(item){
    console.log(item.name.toLocaleUpperCase())
 })
 
-*/
+
 
 // map
 
-// const ages = people.map(function(person){
-//     return person.age
-// })
-// console.log(ages)
+const ages = people.map(function(person){
+    return person.age
+})
+console.log(ages)
 
-// //  iterate over the array using map, then we will pull out the name value, place it it heading 1, display it on screen
+//  iterate over the array using map, then we will pull out the name value, place it it heading 1, display it on screen
 
-// const names = people.map(function(person){
-//     return `<h1>${person.name}</h1>`
-// })
-// document.body.innerHTML = names.join('')
-// console.log(names)
+const names = people.map(function(person){
+    return `<h1>${person.name}</h1>`
+})
+document.body.innerHTML = names.join('')
+console.log(names)
 
 //filter
-// const youngPeople = people.filter(function(person){
-//     return person.position === 'developer'
-// })
-// console.log(youngPeople)
+const youngPeople = people.filter(function(person){
+    return person.position === 'developer'
+})
+console.log(youngPeople)
 
 //find
 
