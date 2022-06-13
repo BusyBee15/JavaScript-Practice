@@ -43,3 +43,4 @@ const sentence = `${day}, ${date.getDate()} ${month} ${date.getFullYear()}`
 console.log(sentence)
 
 document.body.innerHTML = sentence
+
