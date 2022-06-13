@@ -2,12 +2,13 @@
 //it doesn't return new array
 
 const people = [
-    {name:'bob', age:21, position:'developer', id:1},
-    {name:'peter', age:22, position:'designer', id:2},
-    {name:'susy', age:31, position:'the boss', id:3},
-    {name:'susy', age:31, position:'the boss', id:4},
+    {name:'bob', age:21, position:'developer', salary:200, id:1},
+    {name:'peter', age:22, position:'designer',salary:300, id:2},
+    {name:'susy', age:31, position:'the boss',salary:500, id:3},
+    {name:'susy', age:31, position:'the boss',salary:500, id:4},
 
 ]
+
 
 function showPerson(person){
     //recall, we can access items of the array here, since this will be passed as a callback
@@ -54,3 +55,17 @@ console.log(person)
 console.log(people.find(function(person){
     return person.name === 'susy'
 }))
+
+
+
+
+// reduce 
+
+// Asuume we are the owners of the company, we want to calculate how much our team costs us daily
+
+const total = people.reduce(function(acc, currItem){
+    acc += currItem.salary
+    return acc
+}, 0)
+
+console.log(total)
