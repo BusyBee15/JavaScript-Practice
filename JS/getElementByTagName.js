@@ -19,3 +19,6 @@ console.log(betterItems)
 betterItems.forEach(function(item){
     console.log(item)
 })
+
+
+// similar method is getElementByClassName
