@@ -94,7 +94,7 @@ btn.addEventListener('click', function(){
 function hi(name="ABC"){
 console.log(name);
 }
-hi()
+// hi()
 hi("anu")
 
 const hiA= (name="ABC")=>{
